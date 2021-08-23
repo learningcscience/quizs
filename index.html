@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/fc64e3e78a.js" crossorigin="anonymous"></script>
+	<title> Quiz- for fun </title>
+	<link rel="icon" href="images/titlelogo.png">
+</head>
+
+
+
+<body>
+
+<audio loop id="audio">
+	<source src="audio/bg-music.mp3">
+</audio>
+
+
+<audio id="correct-audio">
+	<source src="audio/correct.wav">
+</audio>
+
+
+<audio id="incorrect-audio">
+	<source src="audio/incorrect.mp3">
+</audio>
+
+
+
+<div class="nav">
+	<div class="logo">
+		<img src="images/logo.png"><br>
+	</div>
+
+
+	<div class="score">
+		 <span> <p id="score"> Score : 0 </p> </span>  &nbsp &nbsp 
+
+		<button id="soundOn"> <img id="onbtn" src="images/off.png" onclick="play()"> </button>
+
+	</div>
+
+</div>
+
+
+	<br><br>
+
+
+	<div class="correct">
+		<p> Correct Answer <span class="start"> Try Next  </span> </p>
+	</div>
+
+	<div class="incorrect">
+		<p> GAME OVER <span class="start"> Try Again  </span> </p> 
+	</div>
+
+
+<div class="container">
+
+
+<div class="main-content">
+
+
+	<p id="question"> </p><br>
+
+<div class="options">
+
+	<input type="radio" name="checker" id="opt-1"><span id="opt1">  </span> <br><br>
+	<input type="radio" name="checker" id="opt-2"><span id="opt2">  </span> <br><br>
+	<input type="radio" name="checker" id="opt-3"><span id="opt3">  </span> <br><br>
+	<input type="radio" name="checker" id="opt-4"><span id="opt4">  </span> <br>
+
+</div>
+
+<div class="confirmSect">
+	<br>
+	<button id="confirm"> Confirm  <i class="fas fa-check-circle"></i></button> &nbsp  &nbsp   &nbsp 
+	<button id="changeQuestion"> Next   <i class="fas fa-arrow-circle-right"></i> </button>
+
+</div>
+
+</div>
+
+
+<br><br>
+
+<div class="price">
+	
+	 
+  <table>
+    
+    <tr>
+	<th> Prize </th>
+    </tr>
+
+    <tr>
+      	<td id="6"> Rs 1,00,000</td>
+    </tr>
+
+    <tr>
+      	<td id="5"> Rs 50,000</td>
+    </tr>
+   
+     <tr>
+      	<td id="4"> Rs 10,000</td>
+    </tr>
+   
+     <tr>
+      	<td id="3"> Rs 5,000</td>
+    </tr>
+   
+     <tr>
+      	<td id="2"> Rs 2,000 </td>
+    </tr>
+   
+     <tr>
+      	<td id="1"> Rs 1,000 </td>
+    </tr>
+   
+  </table>
+</div>
+
+
+</div>
+<br><br>
+
+<hr>
+<div class="footer">
+
+	<a href="#"><i class="fas fa-angle-up"></i></a><br><br>
+	<p> Copyright &copy; 2021 <a href="#">QUIZ </a>. All Rights Reserved</p>
+
+	<div class="devinfo">
+		<a href="https://www.facebook.com/sparrow.webmaker"> - Bastola Budha </a>
+	</div>
+
+</div>
+
+<script src="script.js"> </script>
+
+
+</body>
+</htl>

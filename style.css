@@ -1,0 +1,232 @@
+
+
+*{
+	font-family: arial;
+	box-sizing: border-box;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+
+span{
+	margin-left: 10px;
+}
+
+input[type="radio"]{
+	height: 15px;
+	width: 15px;
+}
+
+.correct {
+   	background-color: #8bd69c;
+	transition: all 1s;
+	display: none;
+	color: green;
+	margin: 0;
+	padding: 10px;
+	animation-name: fade;
+	animation-duration: 0.8s;
+	border-radius: 10px;
+}
+#question{
+	font-size: 20px;
+}
+.correct p{
+	font-size: 25px;
+	text-align: center;
+}
+.incorrect p{
+	font-size: 25px;
+	text-align: center;
+}
+
+@keyframes fade{
+	from{
+		opacity: 0;
+	}
+	
+	to{
+		opacity: 1;
+	}
+}
+
+.incorrect {
+   	background-color: #f58f99;
+	transition: all 1s;
+	color: #c53f35;
+	display: none;
+	margin: 0;
+	padding: 10px;
+	animation-name: fade;
+	animation-duration: 0.8s;
+	border-radius: 10px;
+}
+
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav .logo{
+	padding-left: 10%;
+}
+
+.logo img{
+	width: 80px;
+}
+.nav .score{
+	padding-right: 12%;
+	padding-top: 2%;
+	display: inline-flex;
+}
+
+#soundOn img{
+	width: 30px;
+}
+
+button#soundOn{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	position: absolute;
+	top: 20px;
+	right: 7%;
+}
+
+
+
+.confirmSect button{
+	border: none;
+	outline: none;
+	padding: 10px 30px;
+	background: #219e43;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+#changeQuestion{
+	background: #fdba12;
+}
+
+.container{
+	padding-top: 2%;
+}
+
+table, tr, td{
+	border:1px solid #ccc;
+	padding: 15px;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+	width: 281px;
+}
+
+th{
+	border: none;
+	background: green;
+	color: white;
+	padding: 20px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+
+span.start{
+	font-size: 14px;
+}
+
+.footer{
+	margin-top: 60px;
+	text-align: center;
+	padding: 50px;
+	background: #000;
+}
+
+.footer i{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #219e43;
+}
+
+.footer p{
+	color: #fff;
+	font-size: 20px;
+}
+.devinfo{
+	positIon: absolute;
+	bottom: -22%;
+	right: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+button#soundOn{
+	position: absolute;
+	top: 3.7%;
+	right: 30px;
+}
+.nav .score{
+	padding-right: 25%;
+	padding-top: 10%;
+}
+.main-content{
+	padding-top: 4%;
+	width: 80%;
+	margin: auto;
+}
+.correct p{
+	font-size: 18px;
+}
+.incorrect p{
+	font-size: 18px;
+}
+
+.correct {
+	margin: 0;
+	width: 100%;
+	border-radius: 0px;
+}
+.incorrect{
+	margin: 0;
+	width: 100%;
+	border-radius: 0px;
+}
+
+.container{
+	flex-direction: column;
+	justify-content: center;
+}
+.price{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+.devinfo{
+	positIon: absolute;
+	bottom: -80%;
+	right: 50px;
+	font-size: 15px;
+}
+
+.footer{
+	padding: 80px;
+}
+
+.footer p{
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+	
+}
